@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dramabox Generator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white p-8">
+
+<h1 class="text-3xl font-bold mb-6">Dramabox Fake Player Generator</h1>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="space-y-4">
+
+<input id="bookId" placeholder="Book ID"
+class="w-full p-3 rounded text-black">
+
+<input id="rating" placeholder="Rating"
+class="w-full p-3 rounded text-black">
+
+<input id="views" placeholder="Views"
+class="w-full p-3 rounded text-black">
+
+<input id="ads" placeholder="Adsterra Link"
+class="w-full p-3 rounded text-black">
+
+<button onclick="generate()"
+class="bg-yellow-500 text-black px-6 py-3 rounded font-bold">
+Generate + Preview
+</button>
+
+<button onclick="copyHTML()"
+class="bg-green-500 text-black px-6 py-3 rounded font-bold">
+Copy HTML
+</button>
+
+<textarea id="output"
+class="w-full h-60 mt-4 text-black p-3"></textarea>
+
+</div>
+
+<div>
+
+<h2 class="text-xl mb-4">Preview</h2>
+
+<iframe id="preview"
+class="w-full h-[600px] bg-white rounded"></iframe>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
